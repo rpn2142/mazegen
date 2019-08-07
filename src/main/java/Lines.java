@@ -13,7 +13,7 @@ import java.util.LinkedList;
 public class Lines extends JComponent{
 
     public static final int MARGIN = 50;
-    public static final int N = 3;
+    public static final int N = 20;
     public static final int GAP = 150;
 
     private static class Line{
@@ -66,7 +66,7 @@ public class Lines extends JComponent{
 
     public static void main(String[] args) {
         final Lines comp = new Lines();
-        comp.setPreferredSize(new Dimension(1800, 1800));
+        comp.setPreferredSize(new Dimension(3*MARGIN + N*GAP, 3*MARGIN + N*GAP));
         initComponent(comp);
 
 
